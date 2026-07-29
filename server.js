@@ -1,7 +1,11 @@
 import app from './app.js';
 import dotenv from 'dotenv';
 import { connectMongoDatabase } from './config/db.js';
-dotenv.config({ path: 'config/config.env' });
+
+if(process.env.NODE_ENV !== 'PRODUCTION') {
+  dotenv.config({path:'config/config.env'})
+}
+
 import {v2 as cloudinary} from 'cloudinary';
 import Razorpay from 'razorpay';
 connectMongoDatabase();
