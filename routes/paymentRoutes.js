@@ -4,7 +4,7 @@ import { paymentVerification, processPayment, sendAPIKey } from '../controller/p
 const router=express.Router();
 
 router.route('/payment/process').post(verifyUserAuth,processPayment)
-router.route('/getKey').get(verifyUserAuth,sendAPIKey)
+router.route('/getkey').get(verifyUserAuth,sendAPIKey)
 router.route('/paymentVerification').post(paymentVerification)
 
 export default router;
