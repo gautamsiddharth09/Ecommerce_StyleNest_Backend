@@ -2,10 +2,9 @@
   "name": "mern_ecommerce",
   "version": "1.0.0",
   "main": "index.js",
- "scripts": {
+"scripts": {
   "start": "node server.js",
-  "dev": "nodemon server.js",
-   "build": "npm install && npm install --prefix frontend && npm run build --prefix rontend"
+  "dev": "nodemon server.js"
 },
   "keywords": [],
   "author": "",
